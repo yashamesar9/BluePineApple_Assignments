@@ -1,0 +1,45 @@
+<html >
+<head>
+    <title>Mobile Number Video:30</title>
+
+    <script type="text/javascript">
+    
+
+            function validate(){
+                var mob= document.getElementById("Mobile").value;
+                var regx = /^[7-9]\d{9}$/;
+
+
+                     if(regx.test(mob)){
+                        document.getElementById("lbl").innerHTML="VALID MOBILE NUMBER ";
+                        document.getElementById("lbl").style.color="green";
+                        Mobile.style.border="solid 3px green";
+                        document.getElementById("lbl").style.visibility="visible";
+                        
+                }
+
+                else{
+                    document.getElementById("lbl").innerHTML="INVALID MOBILE NUMBER";
+                    document.getElementById("lbl").style.color="red";
+                    document.getElementById("lbl").style.visibility="visible";
+                    Mobile.style.border="solid 3px red";
+                        
+
+                }
+
+            }
+
+    
+    </script>
+
+</head>
+<body>
+
+    <input id="Mobile" type="text" placeholder="PLEASE ENTER MOBILE NUMBER" style="height: 50px; width: 300px;" /><br>
+    <label id="lbl" style="color: red;  visibility: hidden; ">INVALID MOBILE NUMBER ENTERED</label><br>
+    <br>
+    <br>
+    <br>
+    <button type="button" onclick="validate()">SUBMIT</button>
+</body>
+</html>

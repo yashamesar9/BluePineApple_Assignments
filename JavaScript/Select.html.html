@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>VIDEO NO:22</title>
+   
+    <script type="text/javascript">
+
+        function fun1(){
+            var select = document.getElementById("Selectbox");
+            alert("YOUR OCCUPATION IS  " +select.options[select.selectedIndex].value);
+        }
+
+
+
+    </script>
+
+
+</head>
+<body>
+
+    <h2>PLEASE SELECT OCCUPATION</h2>
+
+    <select name="please select" id="Selectbox">
+        <option value="Business">BUSINESS</option>
+        <option value="job">JOB</option>
+        <option value="builder">BUILDER</option>
+        <option value="Factory">FACTORY</option>
+        <option value="wholesaller">WHOLESALLER</option>
+    </select>
+    <BR></BR>
+    <BR></BR>
+
+    <button id="btn1" onclick="fun1()">SUBMIT</button>
+    
+</body>
+</html>
