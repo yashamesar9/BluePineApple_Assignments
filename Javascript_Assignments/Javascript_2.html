@@ -1,0 +1,54 @@
+<html>
+<head> 
+    <title>JAVASCRIPT ASSIGNMENT 2</title>
+        <script type="text/javascript">
+                    function cnt_chr()
+                    {
+                    
+                    var check=Boolean;
+                    var string= document.getElementById("input").value;
+                    var str1= string.toLowerCase();
+
+                    for(var i=0;i<str1.length;i++)
+                        {
+                        var sum=0;
+                        check=false; 
+
+                            for(var j=0;j<str1.length;j++)
+                                {
+
+                                    if(str1[i]==str1[i+1])
+                                     {
+                                             check=true;
+                                     }
+
+                                    if(str1[i] == str1[j])
+                                    {
+                                        sum++;
+                                    }
+
+
+                               }
+                            
+                        if(check == false)
+                        {
+                            document.getElementById("output").innerHTML=document.getElementById("output").innerHTML+"\nOCCURENCE OF "+str1[i]+" is "+sum;
+                            document.getElementById("output").style.visibility="visible";
+                        }
+
+
+                        }
+
+                   }
+    
+    </script>
+</head>
+<body>
+    <h2>OCCURENCE ASSIGNMENT 2</h2>
+    <input type="text" id="input" placeholder="ENTER INPUT STRING :">
+    <br><br>
+    <button id="butt" type="button" onclick="cnt_chr()">OCCURENCE IS:</button>
+    <br><br>
+    <textarea id="output" cols="25" rows="10" style="visibility: hidden; color:red;">OUTPUT IS: </textarea>
+</body>
+</html>

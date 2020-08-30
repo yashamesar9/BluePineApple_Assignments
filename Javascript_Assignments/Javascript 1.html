@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>ASSIGNMENT 1 JAVASCRIPT</title>
+
+ <script type = "text/javascript">
+  
+  function is_perfect(){
+
+var sum=0;
+var no=document.getElementsByName("number")[0].value;
+
+for(var i=0; i<=no/2; i++)
+    {
+
+    if(no%i == 0)
+    {
+        sum =sum+i;
+    }
+
+    }
+if(sum == no&&no!=0)
+    {
+    document.getElementsByName("output")[0].value="IT IS A PERFECT NUMBER";
+    }
+
+   else if(no==""||no==" ")
+   {
+    document.getElementsByName("output")[0].value="PLEASE ENTER A NUMBER";
+   }
+
+   else
+    {
+    document.getElementsByName("output")[0].value="IT IS NOT PERFECT NUMBER !";
+    
+    }
+    
+    }
+ </script>
+ 
+ </head>
+ <body>
+ 
+    <label >ENTER NUMBER TO CHECK: </label><input type="number" name="number"></input><br>
+    <br><br>
+    <button onClick="is_perfect()" style="margin-left: 200;margin-right: auto;">CLICK FOR RESULT</button>
+    <br>
+    <br>
+    <br>
+    <label for="output"> </label><input type="textbox" name="output" style="width: 200PX; margin-left:200;"></input>
+ 
+ </body>
+</html>
